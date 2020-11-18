@@ -18,13 +18,11 @@ img {
     height: auto;
 }
 .background-header {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    //background-image: url('assets/img/bw_cover2.jpg');
+    background-image: url('assets/img/bw_cover2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center
+    background-attachment: fixed;
 }
 .background-header img {
     display: flex;
