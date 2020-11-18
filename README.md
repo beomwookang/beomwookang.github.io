@@ -1,83 +1,75 @@
-# Jasper
+# Particle Jekyll Theme
 
-This is a port of Ghost's default theme [Casper](https://github.com/tryghost/casper) for Jekyll inspired by [Kasper](https://github.com/rosario/kasper). 
+![](./particle.jpg)
 
-You might well ask at this point why bother making a new Casper's clone? 
-Although this is inspired by Kasper, there are several **additional** features which make this port closer 
-to the original theme. Besides, it was recently updated to match the current version of the theme.
+This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
-The main difference to the original is still the fact that Jasper expects a single author. With a 
-bit of tweaking it shouldn't be too difficult to enable a per-post author. Feel free to fork and improve on this.
+The Theme features:
 
-**Important:**  For security reasons, Github doesn't allow plugins (under _plugins/) when deploying with Github Pages. This means 
-that we need to generate your site locally (as explained below) and push the resulting HTML to a Github repository. 
-This is exactly what I have done for the generating the live demo.
+- Gulp
+- SASS
+- Sweet Scroll
+- Particle.js
+- BrowserSync
+- Font Awesome and Devicon icons
+- Google Analytics
+- Info Customization
 
-## Live demo
+## Basic Setup
 
-[Jasper Live Demo](https://biomadeira.github.io/jasper)
+1. [Install Jekyll](http://jekyllrb.com)
+2. Clone the particle theme: `git clone https://github.com/nrandecker/particle.git`
+3. Edit `_config.yml` to personalize your site.
 
-[Casper's Original Here](https://demo.ghost.io)
+## Site and User Settings
 
+You have to fill some informations on `_config.yml` to customize your site.
 
-## Screenshots
+```
+# Site settings
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
 
-**Home page**
-![home page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen1.png)
+# User settings
+username: Lorem Ipsum
+user_description: Anon Developer at Lorem Ipsum Dolor
+user_title: Anon Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
+```
 
-**Post page**
-![post page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen2.png)
+**Don't forget to change your url before you deploy your site!**
 
-**Author page**
-![author page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen3.png)
+## Color and Particle Customization
+- Color Customization
+  - Edit the sass variables
+- Particle Customization
+  - Edit the json data in particle function in app.js
+  - Refer to [Particle.js](https://github.com/VincentGarreau/particles.js/) for help
 
-**Related posts page**
-![tag page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen4.png)
+## Running the blog in local
 
-**Tags page with opened sidebar**
-![sidebar page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen5.png)
+In order to compile the assets and run Jekyll on local you need to follow those steps:
 
-**404 page**
-![related page](https://raw.githubusercontent.com/biomadeira/jasper/master/assets/images/jasper_screen6.png)
+- Install [NodeJS](https://nodejs.org/)
+- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
+- Install [Yarn](https://yarnpkg.com/): `npm install -g yarn`
+- Install dependencies: `yarn`
+- Run: `gulp`
 
-## Jasper theme includes
+## Questions
 
-* Pagination
-* Author page **(New 07.02.2015)**
-* Tag page(s) **(New 07.02.2015)**
-* 404 page **(New 07.02.2015)**
-* Toggleable sliding sidebar **(New 07.02.2015)**
-* Related posts view **(New 30.10.2015)**
-* Tag description(s) **(New 30.10.2015)**
-* Rss
-* Google Analytics tracking
-* Code Syntax Highlight
-* Author's profile with picture
-* Disqus comments (not Ghost standard)
+Having any issues file a [GitHub Issue](https://github.com/nrandecker/particle/issues/new).
 
-## How to use it
+## License
 
-Simply clone this repository (*master branch*), and then run `jekyll serve` inside the directory. Upload the resulting 
-_site/ contents to your repository (*gh-pages branch*).
+This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
 
-## Issues and contributing 
+## Credits
 
-I have tested this install with Ruby v2.2.2p95 (Mac OS RVM) and Jekyll v3.0.0. If you run into any issues please log them on the [issue tracker](https://github.com/biomadeira/jasper/issues).
-
-Feel free pull-request your patches and fixes.
-
-## Thanks 
-
-Most of the work has been already done by the Ghost team and Rosario. Many thanks to them :smile:
-
-
-## Copyright & License
-
-Copyright (C) 2015 - Released under the MIT License.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+This theme was partially designed with the inspiration from these fine folks
+- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
+- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)

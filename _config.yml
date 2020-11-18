@@ -1,68 +1,20 @@
-# Jekyll configuration
-#markdown: redcarpet
-#highlighter: pygments
-markdown: kramdown
-highlighter: rouge
-paginate: 5
-language: 'en-uk'
+# Site settings
+title: A blog about lorem ipsum dolor sit amet
+description: A blog about lorem ipsum dolor sit amet
+# baseurl: "/particle" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
-# Website info
-name: 'Beom Woo Kang'
-description: "I'm a MS student in Computer Science at Hanyang University"
+# User settings
+username: Anon Developer
+user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
+user_title: Software Developer
+email: anon@anon.com
+twitter_username: lorem_ipsum
+github_username:  lorem_ipsum
+gplus_username:  lorem_ipsum
 
-google_analytics: UA-69281367-1
-disqus: beomwookang
+# Google-analytics
+google-analytics:
+  id: ""
 
-url: "https://beomwookang.github.io"
-baseurl: ""
-
-# Permalinks
-permalink: /:title
-# permalink: /author/:username
-# permalink: /tag/:tag
-
-# gems and other configs
-plugins: [jekyll-paginate]
-
-remote_theme: jekyller/jasper
-
-# Additional settings available on the front-matter
-# Site logo in the index.html (as in demo.ghost.io)
-# Author's page cover in _layouts/author.html
-# The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
-# Disqus comments as a per-post basis
-# ...
-
-# Settings for builing master branch with travis-ci
-# with jekyll-travis
-
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-#safe: false
-#lsi: false
-#username: jekyller
-#
-#repo: jasper
-#branch: master
-#relative_source: ../jasper/
-#destination: ../jasper-pages/
-#production_url:  https://jekyller.github.io/jasper/
-#source_url:  https://github.com/jekyller/jasper/
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
-  - node_modules
-  - .git
+exclude: ['package.json', 'src' , 'node_modules']
