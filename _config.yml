@@ -1,66 +1,160 @@
-# Jekyll configuration
-#markdown: redcarpet
-#highlighter: pygments
-markdown: kramdown
-highlighter: rouge
-paginate: 5
-language: 'en-uk'
+# Theme
+remote_theme: 'epidrome/cover-card'
 
-# Website info
-name: 'Beom Woo Kang'
-description: "I'm a MS student in Computer Science at HYU"
+# Title and tag line
+title: 'Beom Woo Kang'
+description: "I'm a MS stduent in Computer Science at HYU"
 
-short_url: 'jekyller.github.io/jasper/'
-google_analytics: UA-69281367-1
-disqus: username
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /jasper/
+# Images
+avatar: 'avatar.jpg'
+background: 'background.jpg'
+favicon: 'favicon.ico'
 
-# Permalinks
-permalink: /:title
-# permalink: /author/:username
-# permalink: /tag/:tag
+# Online profiles
+#dribbble: 'mydribbble'
+#facebook: 'myfacebook'
+#twitter: 'mytwitter'
+linkedin: 'beomwookang'
+instagram: 'bam.moothe'
+#pinterest: 'mypinterest'
+#youtube: 'myyoutube'
+github-user: 'beomwookang'
+#gitlab-user: ''
+#codepen: ''
+#steam: ''
+#soundcloud: ''
+#lastfm: ''
+#stack-overflow: ''
+#reddit: ''
+#rubygems: ''
+#medium:  ''
+#tumblr: 'mytumblr'
+#weibo: 'myweibo'
+#vk: 'myvk'
+blog_url: 'https://www.notion.so/beomwookang/'
+email: 'beomwookang@gmail.com'
+#messenger: 'myfbchat'
 
-# gems and other configs
-plugins: [jekyll-paginate]
+social-links-order: [email, github-user, instagram, linkedin, blog_url]
 
-# Additional settings available on the front-matter
-# Site logo in the index.html (as in demo.ghost.io)
-# Author's page cover in _layouts/author.html
-# The same for page.html and tag.html layouts
-# Post's page cover as a per-post basis _posts/...
-# Disqus comments as a per-post basis
-# ...
+# Advanced settings
+plugins:
+  - jekyll-remote-theme
 
+# Yaml manifest of supported social links
+# Requirements:
+# `name`
+#     - plain-text name of the site (e.g. twitter)
+#     - **mandatory**
+# `url-pattern`
+#     - site URL pattern containing a placeholder string (e.g. twitter.com/__USERNAME__)
+#     - placeholder will be replaced by username or value specified in _config.yml (e.g. twitter.com/mytwitter)
+#     - **mandatory**
+# `url-scheme`
+#     - the hardcoded URI/URN url-scheme (e.g. https://)
+#     - can be one of: ['https://', 'http://', 'mailto:']
+#     - defaults to '//'
+#     - **optional**
+# `icon-class`
+#     - the font awesome icon class names
+#     - font-awesome free and supports `fas` (solid) and `fab` (brands) styles
+#     - defaults to `fab` style and uses value of `name` attribute (e.g. fab fa-2x fa-twitter)
+#     - **optional**
+social-links:
+  - name: facebook
+    url-pattern: facebook.com/__USERNAME__
+    icon-class: fab fa-2x fa-facebook-f
 
-# Settings for builing master branch with travis-ci
-# with jekyll-travis
+  - name: twitter
+    url-pattern: twitter.com/__USERNAME__
 
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-safe: false
-lsi: false
-username: jekyller
-repo: jasper
-branch: master
-relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url:  https://jekyller.github.io/jasper/
-source_url:  https://github.com/jekyller/jasper/
+  - name: linkedin
+    url-pattern: linkedin.com/in/__USERNAME__
 
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
-  - node_modules
-  - .git
+  - name: google-plus
+    url-pattern: plus.google.com/+__USERNAME__
+
+  - name: vk
+    url-pattern: vk.com/__USERNAME__
+
+  - name: weibo
+    url-pattern: weibo.com/__USERNAME__
+
+  - name: instagram
+    url-pattern: instagram.com/__USERNAME__
+
+  - name: flickr
+    url-pattern: flickr.com/__USERNAME__
+
+  - name: pinterest
+    url-pattern: pinterest.com/__USERNAME__
+
+  - name: github-user
+    url-pattern: github.com/__USERNAME__
+    icon-class: fab fa-2x fa-github
+
+  - name: gitlab-user
+    url-pattern: gitlab.com/__USERNAME__
+    icon-class: fab fa-2x fa-gitlab
+
+  - name: codepen
+    url-pattern: codepen.com/__USERNAME__
+
+  - name: stack-overflow
+    url-pattern: stackoverflow.com/users/__USERNAME__
+
+  - name: reddit
+    url-pattern: reddit.com/user/__USERNAME__
+
+  - name: rubygems
+    url-pattern: rubygems.org/profiles/__USERNAME__
+    icon-class: far fa-2x fa-gem
+
+  - name: steam
+    url-pattern: steamcommunity.com/id/__USERNAME__
+
+  - name: youtube
+    url-pattern: youtube.com/__USERNAME__
+
+  - name: vimeo
+    url-pattern: vimeo.com/__USERNAME__
+
+  - name: soundcloud
+    url-pattern: soundcloud.com/__USERNAME__
+
+  - name: lastfm
+    url-pattern: last.fm/user/__USERNAME__
+
+  - name: medium
+    url-pattern: medium.com/@__USERNAME__
+
+  - name: tumblr
+    url-pattern: __USERNAME__.tumblr.com
+
+  - name: dribbble
+    url-pattern: dribbble.com/__USERNAME__
+
+  - name: keybase
+    url-pattern: keybase.io/__USERNAME__
+
+  - name: messenger
+    url-pattern: m.me/__USERNAME__
+    icon-class: fab fa-2x fa-facebook-messenger
+
+  - name: telegram
+    url-pattern: telegram.me/__USERNAME__
+
+  - name: snapchat
+    url-pattern: snapchat.com/add/__USERNAME__
+
+  - name: quora
+    url-pattern: www.quora.com/profile/__USERNAME__
+
+  - name: blog_url
+    url-pattern: '__USERNAME__'
+    icon-class: fas fa-2x fa-blog
+
+  - name: email
+    url-scheme: 'mailto:'
+    url-pattern: '__USERNAME__'
+    icon-class: far fa-2x fa-envelope-open
