@@ -11,10 +11,10 @@ body {
 #fullscreen {
     z-index: -999;
     min-height: 100%;
-    min-width: 1024px;
+    min-width: 1020px;
     width: 100%;
-    height: auto;
-    position: fixed;
+    height: 100%;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -37,11 +37,92 @@ h3 {
     padding-bottom: 20px;
     font-weight: thin;
 }
-.content {
-    padding-top: 100px;
-    padding-bottom: 40px;
-    background-color: rgba(0, 0, 0, 0.5);
+
+.header {
+  z-index: 1;
+  text-align: center;
+  color:#FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  .site-title {
+    font-size: 50px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+    @media only screen and (min-width:$cut){
+      margin: 0;
+      font-size: 100px;
+    }
+  }
+  .site-description {
+    font-size: 20px;
+    display: block;
+    line-height: 1;
+    color: #FFF;
+    margin-top: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 40px;
+    }
+  }
+}
+
+.header-links {
+  margin: 10px;
+  .link {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 10px;
+    @media only screen and (min-width:$cut){
+      font-size: 20px;
+    }
+  }
+}
+
+.header-icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  .icon {
     text-align: center;
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    transition: all .7s;
+    &:hover {
+      color: $main;
+      background: #FFF;
+    }
+    &:active {
+      color: $main;
+      background: #FFF;
+    }
+    @media only screen and (min-width:$cut) {
+      width: 35px;
+      height: 35px;
+      font-size: 35px;
+    }
+  }
+}
+
+.content {
+    padding-top:20%;
+    text-align: center;
+    height: 50%;
+    min-width: 100vh;
+    width:50%;
+    margin: 0 auto;
+    background-color: transparent;
+
 }
 ul {
     list-style: none;
@@ -73,30 +154,6 @@ a {
 }
 .description {
     display: none;
-}
-
-.header-icons {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  .icon {
-    text-align: center;
-    color: #FFF;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 50%;
-    border: 2px solid #FFF;
-    transition: all .7s;
-    background: #FFF;
-    @media only screen and (min-width:$cut) {
-      width: 35px;
-      height: 35px;
-      font-size: 35px;
-    }
-  }
 }
 
 @media (max-width: 450px) {
