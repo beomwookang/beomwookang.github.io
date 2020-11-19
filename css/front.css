@@ -143,7 +143,8 @@ a:hover {
     margin-left: 40px;
 }
 .content {
-    position: absolute;
-    top: 0;
-    left: 0;
+    width:50%;
+    margin:0 auto;
+    padding-bottom:30%;
+    background-color:#eee;
 }
