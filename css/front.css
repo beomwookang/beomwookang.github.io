@@ -143,6 +143,7 @@ a:hover {
     margin-left: 40px;
 }
 .content {
-    padding-top: 60px;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
 }
