@@ -24,15 +24,18 @@ body {
     border: 5px solid white;
     margin-bottom: 40px;
 }
+
+
 h1 {
     color: white;
     font-weight: bold;
     letter-spacing: 0.1em;
     font-size: 4em;
     font-family: 'Open Sans';
-    margin: -10px 0;
+    margin: -10px 0; 
 }
 h3 {
+    font-size: 1.66em;
     color: white;
     padding-bottom: 20px;
     font-weight: thin;
@@ -93,9 +96,9 @@ h3 {
     width: 20px;
     height: 20px;
     font-size: 20px;
-    padding: 10px;
+    padding: 2px;
     margin: 5px;
-    border-radius: 50%;
+    border-radius: 70%;
     border: 2px solid #FFF;
     transition: all .7s;
     &:hover {
@@ -118,7 +121,7 @@ h3 {
     padding-top:20%;
     text-align: center;
     height: 50%;
-    min-width: 100vh;
+    /*min-width: 100vh;*/
     width:50%;
     margin: 0 auto;
     background-color: transparent;
@@ -148,6 +151,7 @@ li:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 a {
+    font-size:1.6em;
     color: white;
     padding: 15px;
     text-decoration: none;
@@ -157,6 +161,23 @@ a {
 }
 
 @media (max-width: 450px) {
+h1 {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 1.8em;
+    font-family: 'Open Sans';
+    margin: -5px -10px;
+}
+h3 {
+    padding-top:1.2em;
+    color: white;
+    font-weight: thin;
+    letter-spacing: 0.04em;
+    font-size: 0.7em;
+    font-family: 'Open Sans';
+    margin: -5px -20px;
+}
 ul {
     text-align: center;
 }
@@ -178,11 +199,10 @@ li:hover {
 }
 a {
     text-align: justify;
-    border: 2px solid white;
-    border-radius: 5px;
+    font-size:1.0em;
+    border-radius: px;
     color: white;
     padding: 15px;
-    padding-left: 30px;
     width: 70%;
 }
 a:hover {
@@ -200,10 +220,11 @@ a:hover {
     margin-left: 40px;
 }
 .content {
-    padding-top: 30%;
-    min-height: 100%;
-    min-width: 100vh;
+    padding-top:20%;
+    text-align: center;
+    height: 50%;
+    /*min-width: 100vh;*/
     width:50%;
-    margin:0 auto;
-    background-color: transparent;
+    margin: 0 auto;
+    background-color: transparent;    
 }
