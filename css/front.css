@@ -127,6 +127,12 @@ h3 {
     background-color: transparent;
 
 }
+
+img {
+    width: 2em;
+    color: white;
+    text-decoration: none;
+}
 ul {
     list-style: none;
     padding: 0;
@@ -213,6 +219,13 @@ a:hover {
     color: white;
     text-decoration: none;
 }
+
+img {
+    width: 1.9em;
+    color: white;
+    text-decoration: none;
+}
+
 .description {
     display: inline-block;
     color: white;
