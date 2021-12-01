@@ -1,0 +1,61 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/favicon.png' }}" >
+
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .imgbox {
+	width: 100%;
+	height: 100vh !important;
+	margin: 0;
+    }
+    .center-fit {
+	width: 100%;
+	height: 100vh !important;
+	margin: 0 auto;
+    }
+    .profile-pic {
+	width: 70%;
+	margin-top: 10vh;
+    }
+    .ta {
+	margin: 0.1em 0em 0em 0.7em; 
+	padding: 0.1em 0em 0em 0.7em;
+    }	
+    .edu {
+        margin-left: 0.7em;
+        padding-left: 0.7em;
+    }
+
+
+    @media only screen and (min-width: 768px) {
+	h3 {
+	    font-size: 2rem;
+	}	    
+	.profile-pic {
+	    width: 35%;
+	    margin-top: 10vh;
+	}
+	.ta {
+	    margin: 0.1em 0em 0em 5.5em; 
+  	    padding: 0.1em 0em 0em 5.5em;
+	}	
+	.edu {
+	    margin-left: 5.5em;
+	    padding-left: 5.5em;
+	}
+
+    }
+	
+  </style>
+</head>
