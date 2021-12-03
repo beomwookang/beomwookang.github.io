@@ -8,7 +8,7 @@ url: "localhost:4000"
 
 # User settings
 username: Beom Woo Kang
-user_description: Hi! I am an Masters Student in Computer Science at Hanyang University.
+user_description: Hi! I am a Masters Student in Computer Science at Hanyang University.
 #user_description: Hi! I am an M.S. student in Computer Science at Hanyang University advised by <a href="https://sites.google.com/site/hyucasslab/home/professor?authuser=0">Yongjun Park</a>.
 user_title: Researcher, Writer, Architect
 email: beomwookang@gmail.com
